@@ -16,11 +16,15 @@
             color: white;
             font-weight: 500;
         }
+
         .inactive-link {
-            color: #a0aec0; /* gray-400 */
+            color: #a0aec0;
+            /* gray-400 */
         }
+
         .inactive-link:hover {
-            color: #e2e8f0; /* gray-200 */
+            color: #e2e8f0;
+            /* gray-200 */
         }
     </style>
 </head>
@@ -30,7 +34,7 @@
     <header class="bg-gray-900/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h2 class="text-xl font-bold text-white">Anwar's Portfolio</h2>
-            
+
             <!-- Desktop Navigation -->
             <ul id="desktop-menu" class="hidden md:flex items-center gap-6 lg:gap-8">
                 <li><a href="#home" class="nav-link inactive-link transition-colors duration-300">Home</a></li>
@@ -40,14 +44,16 @@
 
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
                 </svg>
             </button>
         </nav>
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden md:hidden">
-             <ul class="flex flex-col items-center py-4">
+            <ul class="flex flex-col items-center py-4">
                 <li><a href="#home" class="nav-link block py-2 px-4 text-sm inactive-link">Home</a></li>
                 <li><a href="#about" class="nav-link block py-2 px-4 text-sm inactive-link">About</a></li>
                 <li><a href="#projects" class="nav-link block py-2 px-4 text-sm inactive-link">Projects</a></li>
@@ -64,21 +70,44 @@
             </div>
         </section>
 
-        <!-- About Section --> 
-        <section id="about" class="min-h-screen py-20 lg:py-24 bg-gray-900"> 
-            <div class="container mx-auto px-6"> <div class="flex flex-col lg:flex-row items-center gap-12" > 
-                <div class="lg:w-1/2 text-center lg:text-left" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200"> 
-                    <h2 class="text-3xl font-bold text-white mb-4">About Me</h2> 
-                    <p class="text-lg text-gray-300 leading-relaxed"> Hey, I’m Anwar — a Computer Science student who enjoys turning ideas into real, working systems. I’ve explored a variety of tools and languages, but Python is where I feel most at home — especially when it comes to automation, data analysis, and building smart solutions that save time and effort. Lately, I’ve been diving deeper into machine learning, learning how data and algorithms shape the decisions behind modern tech.</p> 
-                </div> 
-                <div class="lg:w-1/2"> 
-                    <div class="p-4 bg-gray-800 rounded-lg shadow-2xl" data-aos="fade-down"> 
-                       <img src="Me.jpg" alt="Anwar's Photo" class="rounded-full w-48 h-48 object-cover border-4 border-gray-400">
-```http://googleusercontent.com/image_generation_content/200
-                    </div> 
-                </div> 
-            </div> 
-            </div> 
+        <!-- About Section -->
+        <section id="about" class="min-h-screen py-20 lg:py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 text-center lg:text-left" data-aos="slide-right" data-aos-duration="1000"
+                        data-aos-delay="200">
+                        <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                        <div class="text-left space-y-6 w-full max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-2">Education</h3>
+                                <p class="text-xl text-gray-200 font-semibold">University of Hail</p>
+                                <p class="text-gray-400">B.S. Computer Science (Expected Aug 2026)</p>
+                                <p class="text-blue-400 font-semibold mt-1">GPA: 3.95/4.0</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-2">Experience</h3>
+                                <p class="text-xl text-gray-200 font-semibold">Machine Learning Intern</p>
+                                <p class="text-gray-400">King Abdullah University of Science and Technology (KAUST)</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-2">Research &
+                                    Interests</h3>
+                                <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                    <li>Machine Learning & Computer Vision</li>
+                                    <li>Time-Series Analysis (IMU Sensors)</li>
+                                    <li>Human Activity Recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex justify-center">
+                        <div class="p-4 bg-gray-800 rounded-full shadow-2xl" data-aos="fade-down">
+                            <img src="Me.jpg" alt="Anwar's Photo"
+                                class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-gray-400">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -88,66 +117,96 @@
                 <h2 class="text-3xl font-bold text-white text-center mb-12">My Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="project_parent_div">
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="200">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="200">
                         <h3 class="text-xl font-semibold mb-2 text-white">Text to morse code</h3>
-                        <p class="text-sm text-gray-400 mb-4">A tool that converts plain text to Morse code — and back again</p>
-                        <a href="{{url_for('text_to_morsecode')}}" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">A tool that converts plain text to Morse code — and back
+                            again</p>
+                        <a href="{{url_for('text_to_morsecode')}}" target="_blank"
+                            class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="400">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="400">
                         <h3 class="text-xl font-semibold mb-2 text-white">Pdf To Audio Book</h3>
-                        <p class="text-sm text-gray-400 mb-4">Upload a PDF and turn it into spoken audio. Perfect for studying or hands-free reading.</p>
-                        <a href="#" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">Upload a PDF and turn it into spoken audio. Perfect for
+                            studying or hands-free reading.</p>
+                        <a href="#" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project
+                            →</a>
                     </div>
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="600">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="600">
                         <h3 class="text-xl font-semibold mb-2 text-white">color palete generator</h3>
-                        <p class="text-sm text-gray-400 mb-4">Extracts the most dominant colors from any image and builds a clean, ready-to-use palette.</p>
-                        <a href="https://github.com/Agarva-ui/Image_color_palete_generator" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">Extracts the most dominant colors from any image and
+                            builds a clean, ready-to-use palette.</p>
+                        <a href="https://github.com/Agarva-ui/Image_color_palete_generator" target="_blank"
+                            class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="600">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="600">
                         <h3 class="text-xl font-semibold mb-2 text-white">Tic Tac Toe</h3>
-                        <p class="text-sm text-gray-400 mb-4">Play classic Tic Tac Toe against another player — or challenge a smart AI powered by the Minimax algorithm.</p>
-                        <a href="https://github.com/Agarva-ui/Tic-Tac-Toe" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">Play classic Tic Tac Toe against another player — or
+                            challenge a smart AI powered by the Minimax algorithm.</p>
+                        <a href="https://github.com/Agarva-ui/Tic-Tac-Toe" target="_blank"
+                            class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="600">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="600">
                         <h3 class="text-xl font-semibold mb-2 text-white">Flight Deal Search</h3>
-                        <p class="text-sm text-gray-400 mb-4">A Python-based flight search tool that uses the Amadeus API to retrieve real-time flight options between any two cities. It automatically fetches prices</p>
-                        <a href="https://github.com/Agarva-ui/Flight-Deal-Search" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">A Python-based flight search tool that uses the Amadeus
+                            API to retrieve real-time flight options between any two cities. It automatically fetches
+                            prices</p>
+                        <a href="https://github.com/Agarva-ui/Flight-Deal-Search" target="_blank"
+                            class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300" data-aos="fade-in-right" data-aos-delay="600">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-in-right" data-aos-delay="600">
                         <h3 class="text-xl font-semibold mb-2 text-white">Spotifiy Music Of The Past</h3>
-                        <p class="text-sm text-gray-400 mb-4">A app that uses the Spotify API to generate a playlist of the top 100 songs from any chosen year, allowing users to relive musical hits from the past instantly.</p>
-                        <a href="https://github.com/Agarva-ui/Spotifiy-Music-Of-The-Past" target="_blank" class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
+                        <p class="text-sm text-gray-400 mb-4">A app that uses the Spotify API to generate a playlist of
+                            the top 100 songs from any chosen year, allowing users to relive musical hits from the past
+                            instantly.</p>
+                        <a href="https://github.com/Agarva-ui/Spotifiy-Music-Of-The-Past" target="_blank"
+                            class="inline-block text-blue-400 hover:text-blue-300">View Project →</a>
                     </div>
                 </div>
-                    
-                </div>
+
+            </div>
             </div>
         </section>
     </main>
 
     <!-- Contact Footer -->
- <footer id="contact" class="bg-gray-900/80 py-12">
+    <footer id="contact" class="bg-gray-900/80 py-12">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl font-bold text-white mb-4">Get In Touch</h2>
             <p class="text-gray-400 mb-6">Feel free to reach out for collaborations or just a friendly chat!</p>
-            <a href="mailto:anwar.badiea@gmail.com" class="text-lg text-blue-400 hover:underline">anwar.badiea@gmail.com</a>
+            <a href="mailto:anwar.badiea@gmail.com"
+                class="text-lg text-blue-400 hover:underline">anwar.badiea@gmail.com</a>
             <div class="flex justify-center gap-6 mt-8">
                 <!-- GitHub Icon -->
-                <a href="https://github.com/Agarva-ui" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                <a href="https://github.com/Agarva-ui" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </a>
                 <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/in/anwar-alshaibani-21b91733a/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <a href="https://www.linkedin.com/in/anwar-alshaibani-21b91733a/" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
                 </a>
             </div>
         </div>
     </footer>
- <script>
+    <script>
 
         document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -159,7 +218,7 @@
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
-            
+
             // Close mobile menu when a link is clicked
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
@@ -192,7 +251,7 @@
 
             // Listen for scroll events
             window.addEventListener('scroll', updateActiveLink);
-            
+
             // Initial check on page load
             updateActiveLink();
         });
@@ -206,4 +265,5 @@
     </script>
 
 </body>
+
 </html>
